@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Conservation - Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f9ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            position: relative;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-container img {
+            height: 50px;
+            width: 50px;
+            object-fit: contain;
+        }
+
+        .logo-container h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgba(0, 118, 182, 0.9);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #023e8a;
+        }
+
+        /* Carousel Section */
+        .carousel {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 15s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            58% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            91% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Hero Video Section */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero-section video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .hero-content p {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        .intro {
+            padding: 40px 20px;
+            text-align: center;
+            background: #caf0f8;
+        }
+
+        .intro h2 {
+            color: #0077b6;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .bg-image-section {
+            background: url('https://images.unsplash.com/photo-1528825871115-3581a5387919') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin: 40px 0;
+        }
+
+        .bg-image-section h2 {
+            font-size: 40px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature h3 {
+            color: #0096c7;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/728/728093.png" alt="Logo">
+            <h1>Water Conservation</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="p.html">Home</a>
+        <a href="about us.html">about us</a>
+        <a href="tips.html">Tips</a>
+        <a href="Importance.html">Importance</a>
+        <a href="program.html">programs</a>
+        <a href="profile.html">profile</a>
+        <a href="contact.html">contact</a>
+        <a href="thanks.html">Thank You</a>
+    </nav>
+
+    <!-- Moving Images Section 
+    <!section class="carousel">
+        <div class="slides">
+            <img src= "1.png" alt="Water 1">
+            <img src= "2.png" alt="Water 2">
+            <img src="BG.PNG"  alt="Water 3">
+        </div>
+    </section>>
+
+    <!-- Background Video Section -->
+    <section class="hero-section">
+        <video autoplay muted loop>
+            <source src="adii.mp4"  type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Conserve Water Today</h1>
+            <p>Protect our planet for a better tomorrow.</p>
+        </div>
+    </section>
+
+    <!-- Intro Text -->
+    <section class="intro">
+        <h2>Welcome to our Water Conservation Portal</h2>
+        <p>Water is essential for life. Through simple actions and awareness, we can protect and preserve this vital resource. Join us in making a difference for future generations.</p>
+    </section>
+
+    <!-- Background Image Section -->
+    <center><section class style="background-image: url('ad.png'); background-repeat:no-repeat ; width: 600px;">
+        <h2><center>Every Drop Counts</center></h2>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        </center>
+        
+    </section>
+
+    <!-- Features Section -->
+   <section class="features"></section>
+   <center><table border="4px">
+    <tr><th>
+        <div class="feature">
+            <h3>Learn & Educate</h3>
+            <p>Discover ways to conserve water and educate your community.</p>
+        </div>
+    </th>
+    <th>
+        <div class="feature">
+            <h3>Take Action</h3>
+            <p>Start applying water-saving techniques at home and work.</p>
+        </div>
+    </th>
+    <th>
+        <div class="feature">
+            <h3>Global Impact</h3>
+            <p>Understand how water conservation helps fight climate change globally.</p>
+        </div>
+    </th>
+    </tr>
+    </section>
+</table>
+</center>
+
+    <footer>
+        &copy; 2025 Water Conservation Initiative | Designed for a sustainable future.
+    </footer>
+
+</body>
+
+</html>

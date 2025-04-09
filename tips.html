@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Conservation Tips</title>
+    <style>
+        /* Background image */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(drop.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Center the content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            animation: fadeIn 3s ease-out;
+        }
+
+        /* Tips Section */
+        .tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .tip-card {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 1s forwards;
+        }
+
+        .tip-card:nth-child(even) {
+            animation-delay: 0.5s;
+        }
+
+        .tip-card:nth-child(odd) {
+            animation-delay: 1s;
+        }
+
+        .tip-card h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .tip-card p {
+            font-size: 1em;
+        }
+
+        /* FadeIn and SlideUp animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Button styling */
+        .btn {
+            background-color:blue;
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Water Conservation Tips</h1>
+        <p>Learn simple yet effective ways to conserve water and make a positive impact on the environment.</p>
+
+        <div class="tips">
+            <div class="tip-card">
+                <h2>Fix Leaks Promptly</h2>
+                <p>Leaking faucets, pipes, or toilets can waste a lot of water over time. Make sure to fix leaks as soon as they appear!</p>
+            </div>
+            <div class="tip-card">
+                <h2>Take Shorter Showers</h2>
+                <p>Reducing your shower time by just a few minutes can save gallons of water every day.</p>
+            </div>
+            <div class="tip-card">
+                <h2>Use Water-Efficient Appliances</h2>
+                <p>Investing in water-efficient dishwashers, washing machines, and toilets can significantly reduce water consumption.</p>
+            </div>
+            <div class="tip-card">
+                <h2>Turn Off the Tap</h2>
+                <p>Don’t leave the tap running while brushing your teeth or washing dishes. It can save gallons of water every day.</p>
+            </div>
+            <div class="tip-card">
+                <h2>Water Your Plants Wisely</h2>
+                <p>Water your garden early in the morning or late in the evening to minimize evaporation and ensure your plants get the most water.</p>
+            </div>
+            <div class="tip-card">
+                <h2>Use a Rain Barrel</h2>
+                <p>Collect rainwater in a barrel to use for watering plants or cleaning, reducing your reliance on tap water.</p>
+            </div>
+        </div>
+
+        <a href="https://www.example.com" class="btn">Learn More</a>
+    </div>
+
+</body>
